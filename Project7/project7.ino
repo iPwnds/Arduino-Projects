@@ -14,7 +14,7 @@ void setup() {
 
 void loop() {
   int keyVal = analogRead(A0);
-
+  
   Serial.println(keyVal);
 
   if(keyVal >= 1010 && keyVal <= 1025){
