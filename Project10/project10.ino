@@ -4,6 +4,7 @@ const int enablePin = 9;
 const int directionSwitchPin = 4;
 const int onOffSwitchStateSwitchPin = 5;
 const int potPin = A0;
+
 int onOffSwitchState = 0;
 int previousOnOffSwitchState = 0;
 int directionSwitchState = 0;
@@ -43,6 +44,7 @@ void loop() {
         digitalWrite(controlPin1, HIGH);
         digitalWrite(controlPin2, LOW);
     }
+    
     else{
         digitalWrite(controlPin1, LOW);
         digitalWrite(controlPin2, HIGH);
@@ -51,6 +53,7 @@ void loop() {
     if(motorEnabled == 1){
         analogWrite(enablePin, motorSpeed);
     }
+
     else{
         analogWrite(enablePin, 0);
     }
