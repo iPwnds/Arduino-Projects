@@ -17,16 +17,14 @@ void loop() {
     digitalWrite(4, LOW);
     digitalWrite(5, LOW);
   }
+
   else{
     digitalWrite(3, LOW);
     digitalWrite(4, LOW);
     digitalWrite(5, HIGH);
-
     delay(250);
-
     digitalWrite(4, HIGH);
     digitalWrite(5, LOW);
-
     delay(250);
   }
 }
